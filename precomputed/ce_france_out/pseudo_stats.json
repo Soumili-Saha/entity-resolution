@@ -1,0 +1,15 @@
+{
+ "unseen_countries": [
+  "France"
+ ],
+ "unseen_s1": 259452,
+ "unseen_pairs": 2102556,
+ "pseudo_pos": 600000,
+ "pseudo_decoy_neg": 56551,
+ "pseudo_rand_neg": 745038,
+ "pos_candidates": 746968,
+ "decoy_candidates": 56551,
+ "replay_pairs": 1401589,
+ "train_pairs": 2803178,
+ "mean_prob_change_vs_large": -0.022206848487257957
+}

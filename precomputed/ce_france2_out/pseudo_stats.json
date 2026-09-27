@@ -1,0 +1,16 @@
+{
+ "unseen_countries": [
+  "France"
+ ],
+ "unseen_s1": 259452,
+ "unseen_pairs": 2234246,
+ "signals": "lgbm_full, ce_large, ce_france_r1",
+ "pseudo_pos": 773613,
+ "pseudo_decoy_neg": 107730,
+ "pseudo_rand_neg": 944327,
+ "pos_candidates": 773613,
+ "decoy_candidates": 107730,
+ "replay_pairs": 1825670,
+ "train_pairs": 3651340,
+ "mean_prob_change_vs_prev": -0.010970879346132278
+}
