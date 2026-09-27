@@ -1,0 +1,11 @@
+{
+ "lgbm": "artefacts/test/probs_model_v2.parquet",
+ "blend": "logit",
+ "w": 0.5,
+ "decision": {
+  "method": "expf",
+  "alpha": 1.5,
+  "one_to_one": true
+ },
+ "shift": "france:1"
+}

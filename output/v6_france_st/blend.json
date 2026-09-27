@@ -1,0 +1,15 @@
+{
+ "model": "stack_extra",
+ "extra": {
+  "ce_large": "precomputed/ce_large_out"
+ },
+ "swap": "ce_large=precomputed/ce_france_out",
+ "decision": {
+  "method": "expf",
+  "alpha": 1.5,
+  "one_to_one": true
+ },
+ "shift": "france:-1",
+ "pairs": "precomputed/ce/train_pairs_part*.parquet",
+ "lgbm_test": "artefacts/test/probs_model_v2.parquet"
+}

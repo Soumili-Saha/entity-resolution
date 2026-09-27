@@ -1,0 +1,6 @@
+{
+ "base": "output/v12_mylgbm",
+ "added_from": "precomputed/my_pipeline/output_ce/matching_results.tsv.gz",
+ "rule": "pairs never in base candidates, pool record unused",
+ "added": 28319
+}

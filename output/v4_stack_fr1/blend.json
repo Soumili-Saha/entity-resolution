@@ -1,0 +1,9 @@
+{
+ "model": "stack_pool",
+ "decision": {
+  "method": "expf",
+  "alpha": 1.5,
+  "one_to_one": true
+ },
+ "shift": "france:-1"
+}
