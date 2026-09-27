@@ -1,0 +1,123 @@
+{
+ "macro_f05": 0.9900901895237616,
+ "ci95": [
+  0.9896405607431106,
+  0.9905226047527552
+ ],
+ "n_s1": 66243,
+ "n_missing_rows": 0,
+ "pair_precision": 0.9989238054240207,
+ "pair_recall": 0.971653138044289,
+ "singleton_f05": 0.9954128440366973,
+ "multi_f05": 0.9897747641335934,
+ "by_country": {
+  "India": 0.990195,
+  "US": 0.99002
+ },
+ "blocking_recall": 0.9917737834053745,
+ "cands_per_s1": 24.735866431170084,
+ "delta_vs_baseline": 0.0003381129650157993,
+ "delta_ci95": [
+  0.0002000073773084768,
+  0.00046464762508780823
+ ],
+ "churn_vs_v11": [
+  {
+   "country": "france",
+   "S1": 259452,
+   "changed": 0.0,
+   "m_ref": 823814,
+   "m_new": 823814,
+   "m_delta": 0
+  },
+  {
+   "country": "india",
+   "S1": 809986,
+   "changed": 0.00827,
+   "m_ref": 2726193,
+   "m_new": 2727158,
+   "m_delta": 965
+  },
+  {
+   "country": "us",
+   "S1": 663106,
+   "changed": 0.00865,
+   "m_ref": 2241922,
+   "m_new": 2243415,
+   "m_delta": 1493
+  }
+ ],
+ "churn_if_france_applied": [
+  {
+   "country": "france",
+   "S1": 259452,
+   "changed": 0.06203,
+   "m_ref": 823814,
+   "m_new": 823766,
+   "m_delta": -48
+  },
+  {
+   "country": "india",
+   "S1": 809986,
+   "changed": 0.00827,
+   "m_ref": 2726193,
+   "m_new": 2727158,
+   "m_delta": 965
+  },
+  {
+   "country": "us",
+   "S1": 663106,
+   "changed": 0.00865,
+   "m_ref": 2241922,
+   "m_new": 2243415,
+   "m_delta": 1493
+  }
+ ],
+ "tag": "E001_mylgbm",
+ "hypothesis": "",
+ "reuse": "",
+ "extra": {
+  "ce_large": "precomputed/ce_large_out",
+  "ce_full": "precomputed/ce_full_out",
+  "qwen": "precomputed/ce_qwen_v11",
+  "mylgbm": "precomputed/my_lgbm_out"
+ },
+ "fill": [
+  "qwen=ce_full",
+  "mylgbm=lgbm"
+ ],
+ "eval_fill": [
+  "qwen=ce_full:0.02:0.98",
+  "mylgbm=lgbm"
+ ],
+ "test_fill": [
+  "qwen=ce_full",
+  "mylgbm=lgbm"
+ ],
+ "avg": [],
+ "raw": false,
+ "params": {
+  "objective": "binary",
+  "learning_rate": 0.05,
+  "num_leaves": 31,
+  "min_data_in_leaf": 100,
+  "feature_fraction": 0.9,
+  "bagging_fraction": 0.8,
+  "bagging_freq": 1,
+  "verbose": -1,
+  "seed": 42
+ },
+ "seeds": [
+  42
+ ],
+ "calib": "",
+ "decision": {
+  "method": "expf",
+  "alpha": 1.5,
+  "one_to_one": true
+ },
+ "decision_by_country": {},
+ "fit_oof_f05": 0.9905904021890453,
+ "runtime_min": 11.2,
+ "fit_predict_min": 9.7
+}

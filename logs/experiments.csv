@@ -1,0 +1,10 @@
+timestamp,git_hash,change,blocking_recall,val_macro_f05,loco_f05,notes
+2026-09-25T18:31,,base73 (fold0),,0.9751,,73 feats; lr 0.1 leaves 127; india=0.9689 us=0.9791
+2026-09-25T18:36,,base73 (loco),,,0.9354,73 feats; lr 0.1 leaves 127; us->india 0.9139 india->us 0.9568
+2026-09-25T18:41,,nodecoy (loco),,,0.9101,61 feats; lr 0.1 leaves 127; us->india 0.9088 india->us 0.9115
+2026-09-25T18:47,,drop_len (loco),,,0.9359,69 feats; lr 0.1 leaves 127; us->india 0.9160 india->us 0.9557
+2026-09-25T18:52,,drop_tokabs (loco),,,0.9345,70 feats; lr 0.1 leaves 127; us->india 0.9155 india->us 0.9534
+2026-09-25T18:56,,drop_density (loco),,,0.9348,69 feats; lr 0.1 leaves 127; us->india 0.9155 india->us 0.9542
+2026-09-25T19:02,,reg31 (loco),,,0.9352,73 feats; lr 0.1 leaves 31; us->india 0.9135 india->us 0.9569
+2026-09-27T15:59,,E000_champion: ,0.9918,0.98975,,"dev ci95 0.98930-0.99021; P 0.9989 R 0.9707; India 0.98997 US 0.98961; decision {'method': 'expf', 'alpha': 1.5, 'one_to_one': True}; fitOOF 0.99034; France churn 0 (v11 kept), if applied 0.0320 S1 +2569 matches; 10.3 min"
+2026-09-27T16:43,,E001_mylgbm: ,0.9918,0.99009,,"dev ci95 0.98964-0.99052; P 0.9989 R 0.9717; India 0.99020 US 0.99002; delta +0.00034 ci95 +0.00020..+0.00046; decision {'method': 'expf', 'alpha': 1.5, 'one_to_one': True}; fitOOF 0.99059; France churn 0 (v11 kept), if applied 0.0620 S1 -48 matches; 11.2 min"

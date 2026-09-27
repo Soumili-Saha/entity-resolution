@@ -1,0 +1,33 @@
+ce_prob: missing on 15,103 of 2,635,403 fold-0 pairs
+ce_large_prob: missing on 15,103 of 2,635,403 fold-0 pairs
+ce_full_prob: missing on 0 of 2,635,403 fold-0 pairs
+qwen_prob: missing on 1,864,758 of 2,635,403 fold-0 pairs
+mylgbm_prob: missing on 2,233,578 of 2,635,403 fold-0 pairs
+fill qwen_prob: own score on 770,645 of 2,635,403 pairs, rest from ce_full
+fill mylgbm_prob: own score on 401,825 of 2,635,403 pairs, rest from lgbm
+fill qwen_prob: own score on 770,645 of 2,635,403 pairs, rest from ce_full
+fill mylgbm_prob: own score on 401,825 of 2,635,403 pairs, rest from lgbm
+fill qwen_prob: own score on 2,661,807 of 10,797,489 pairs, rest from ce_full
+fill mylgbm_prob: own score on 10,797,489 of 10,797,489 pairs, rest from lgbm
+swap ce_large: 1,675,848 test pairs replaced from precomputed/ce_france_out
+[export] 1,732,544 S1 rows, 5.8% empty, 3.34 matches per S1
+output validator
+  test dir: dataset/test
+  required S1 entities: 1732544
+  matching_results.tsv: 1732544 rows (101001 empty, 1631543 non-empty).
+  candidate_pairs.tsv: 1732544 rows (0 empty, 1732544 non-empty).
+
+WARNING: ID-existence check is OFF (the default) — not checking that matched/candidate IDs exist in the test set. Every other rule is still checked. Re-run with --check-ids to enable it (needs test_source2/3.tsv; uses more memory). A nonexistent ID only lowers your score, never rejects your submission.
+PASS — no blocking issues found. Safe to submit.
+final churn vs v11:
+             S1  changed    m_ref    m_new  m_delta
+country                                            
+france   259452   0.0000   823814   823814        0
+india    809986   0.0082  2726193  2727176      983
+us       663106   0.0088  2241922  2243606     1684
+final churn vs v11 IF France applied (not submitted):
+             S1  changed    m_ref    m_new  m_delta
+country                                            
+france   259452   0.0988   823814   812276   -11538
+india    809986   0.0082  2726193  2727176      983
+us       663106   0.0088  2241922  2243606     1684

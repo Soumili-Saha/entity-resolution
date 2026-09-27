@@ -1,0 +1,114 @@
+{
+ "macro_f05": 0.9897520765587458,
+ "ci95": [
+  0.9892973955842255,
+  0.9902069291809033
+ ],
+ "n_s1": 66243,
+ "n_missing_rows": 0,
+ "pair_precision": 0.9989002949005104,
+ "pair_recall": 0.9706673878054844,
+ "singleton_f05": 0.9937938478143551,
+ "multi_f05": 0.9895125574856644,
+ "by_country": {
+  "India": 0.989969,
+  "US": 0.989608
+ },
+ "blocking_recall": 0.9917737834053745,
+ "cands_per_s1": 24.735866431170084,
+ "churn_vs_v11": [
+  {
+   "country": "france",
+   "S1": 259452,
+   "changed": 0.0,
+   "m_ref": 823814,
+   "m_new": 823814,
+   "m_delta": 0
+  },
+  {
+   "country": "india",
+   "S1": 809986,
+   "changed": 0.00233,
+   "m_ref": 2726193,
+   "m_new": 2726381,
+   "m_delta": 188
+  },
+  {
+   "country": "us",
+   "S1": 663106,
+   "changed": 0.00253,
+   "m_ref": 2241922,
+   "m_new": 2241941,
+   "m_delta": 19
+  }
+ ],
+ "churn_if_france_applied": [
+  {
+   "country": "france",
+   "S1": 259452,
+   "changed": 0.03198,
+   "m_ref": 823814,
+   "m_new": 826383,
+   "m_delta": 2569
+  },
+  {
+   "country": "india",
+   "S1": 809986,
+   "changed": 0.00233,
+   "m_ref": 2726193,
+   "m_new": 2726381,
+   "m_delta": 188
+  },
+  {
+   "country": "us",
+   "S1": 663106,
+   "changed": 0.00253,
+   "m_ref": 2241922,
+   "m_new": 2241941,
+   "m_delta": 19
+  }
+ ],
+ "tag": "E000_champion",
+ "hypothesis": "",
+ "reuse": "",
+ "extra": {
+  "ce_large": "precomputed/ce_large_out",
+  "ce_full": "precomputed/ce_full_out",
+  "qwen": "precomputed/ce_qwen_v11"
+ },
+ "fill": [
+  "qwen=ce_full"
+ ],
+ "eval_fill": [
+  "qwen=ce_full:0.02:0.98"
+ ],
+ "test_fill": [
+  "qwen=ce_full"
+ ],
+ "avg": [],
+ "raw": false,
+ "params": {
+  "objective": "binary",
+  "learning_rate": 0.05,
+  "num_leaves": 31,
+  "min_data_in_leaf": 100,
+  "feature_fraction": 0.9,
+  "bagging_fraction": 0.8,
+  "bagging_freq": 1,
+  "verbose": -1,
+  "seed": 42
+ },
+ "seeds": [
+  42
+ ],
+ "calib": "",
+ "decision": {
+  "method": "expf",
+  "alpha": 1.5,
+  "one_to_one": true
+ },
+ "decision_by_country": {},
+ "fit_oof_f05": 0.990343263786741,
+ "runtime_min": 10.3,
+ "fit_predict_min": 8.7
+}

@@ -1,0 +1,72 @@
+ce_prob: missing on 15,103 of 2,635,403 fold-0 pairs
+ce_large_prob: missing on 15,103 of 2,635,403 fold-0 pairs
+ce_full_prob: missing on 0 of 2,635,403 fold-0 pairs
+qwen_prob: missing on 1,864,758 of 2,635,403 fold-0 pairs
+fill qwen_prob: own score on 770,645 of 2,635,403 pairs, rest from ce_full
+fill qwen_prob: own score on 264,628 of 2,635,403 pairs, rest from ce_full
+stacker: 1,844,194 fit pairs, 65 features, trees [220]
+fill qwen_prob: own score on 2,661,807 of 10,797,489 pairs, rest from ce_full
+swap ce_large: 1,675,848 test pairs replaced from precomputed/ce_france_out
+test churn vs v11, submitted composition (France = v11):
+             S1  changed    m_ref    m_new  m_delta
+country                                            
+france   259452   0.0000   823814   823814        0
+india    809986   0.0023  2726193  2726381      188
+us       663106   0.0025  2241922  2241941       19
+test churn vs v11 IF applied to France too (not submitted):
+             S1  changed    m_ref    m_new  m_delta
+country                                            
+france   259452   0.0320   823814   826383     2569
+india    809986   0.0023  2726193  2726381      188
+us       663106   0.0025  2241922  2241941       19
+{
+ "macro_f05": 0.9897520765587458,
+ "ci95": [
+  0.9892973955842255,
+  0.9902069291809033
+ ],
+ "n_s1": 66243,
+ "n_missing_rows": 0,
+ "pair_precision": 0.9989002949005104,
+ "pair_recall": 0.9706673878054844,
+ "singleton_f05": 0.9937938478143551,
+ "multi_f05": 0.9895125574856644,
+ "by_country": {
+  "India": 0.989969,
+  "US": 0.989608
+ },
+ "blocking_recall": 0.9917737834053745,
+ "cands_per_s1": 24.735866431170084,
+ "tag": "E000_champion",
+ "hypothesis": "",
+ "reuse": "",
+ "extra": {
+  "ce_large": "precomputed/ce_large_out",
+  "ce_full": "precomputed/ce_full_out",
+  "qwen": "precomputed/ce_qwen_v11"
+ },
+ "fill": [
+  "qwen=ce_full"
+ ],
+ "eval_fill": [
+  "qwen=ce_full:0.02:0.98"
+ ],
+ "test_fill": [
+  "qwen=ce_full"
+ ],
+ "avg": [],
+ "raw": false,
+ "seeds": [
+  42
+ ],
+ "calib": "",
+ "decision": {
+  "method": "expf",
+  "alpha": 1.5,
+  "one_to_one": true
+ },
+ "decision_by_country": {},
+ "fit_oof_f05": 0.990343263786741,
+ "runtime_min": 10.3,
+ "fit_predict_min": 8.7
+}

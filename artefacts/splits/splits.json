@@ -1,0 +1,29 @@
+{
+ "seed": 42,
+ "universe": "fold-0 S1 (crc32 % 5 == 0)",
+ "n_fold0": 441611,
+ "fit": {
+  "n_s1": 309127,
+  "by_country": {
+   "US": 185467,
+   "India": 123660
+  },
+  "singleton_share": 0.0559
+ },
+ "dev": {
+  "n_s1": 66243,
+  "by_country": {
+   "US": 39743,
+   "India": 26500
+  },
+  "singleton_share": 0.0559
+ },
+ "lockbox": {
+  "n_s1": 66241,
+  "by_country": {
+   "US": 39743,
+   "India": 26498
+  },
+  "singleton_share": 0.0559
+ }
+}

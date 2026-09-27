@@ -1,0 +1,5 @@
+# keep output files byte-exact (no CRLF conversion)
+*.tsv -text
+*.gz binary
+*.part* binary
+*.parquet binary

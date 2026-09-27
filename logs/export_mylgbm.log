@@ -1,0 +1,6 @@
+train (OOF) ...
+[16:25:04] [realistic] orphan S2/S3 records in selection: 362,698 | candidate rows dropped: 1,319,526 of 11,514,059
+  stacker pairs 2,635,403 | S1 covered 401,825 | found in v4 candidates 268,112 | not found -> 0.0001 133,713
+test ...
+  stacker pairs 10,797,489 | S1 covered 10,797,489 | found in v4 candidates 8,700,588 | not found -> 0.0001 2,096,901
+wrote precomputed/my_lgbm_out: fold-0 401,825 rows, test 10,797,489 rows

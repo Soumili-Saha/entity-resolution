@@ -1,0 +1,14 @@
+# Exact environment used for the submitted results (Python 3.13.12, Windows 11, CUDA 12.4).
+# GPU build of torch:  pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+pandas==3.0.2
+numpy==2.4.4
+scipy==1.17.1
+scikit-learn==1.8.0
+pyarrow==24.0.0
+PyYAML==6.0.3
+rapidfuzz==3.14.6
+Unidecode==1.4.0
+lightgbm==4.7.0
+torch==2.6.0
+transformers==5.6.0
+sentence-transformers==5.4.1

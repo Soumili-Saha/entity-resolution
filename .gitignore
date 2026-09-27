@@ -1,0 +1,37 @@
+# Source data is never committed
+dataset/**
+!dataset/README.md
+
+# Stage caches are regenerated; only small reports are committed
+artefacts/**
+!artefacts/README.md
+!artefacts/splits/
+!artefacts/splits/splits.json
+!artefacts/exp/
+!artefacts/exp/*/
+!artefacts/exp/*/report.json
+
+# Restored / rebuilt outputs (the committed copies are .gz)
+output/**/*.tsv
+*.zip
+
+# Model checkpoints / caches
+*.pt
+*.bin
+*.safetensors
+*.ckpt
+*.npy
+.cache/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
