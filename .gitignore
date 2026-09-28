@@ -1,18 +1,14 @@
-# Source data is never committed
-dataset/**
-!dataset/README.md
+# Challenge data is never committed
+code/business_entity_resolution/dataset/**
+!code/business_entity_resolution/dataset/README.md
 
-# Stage caches are regenerated; only small reports are committed
-artefacts/**
-!artefacts/README.md
-!artefacts/splits/
-!artefacts/splits/splits.json
-!artefacts/exp/
-!artefacts/exp/*/
-!artefacts/exp/*/report.json
+# Created by the rebuild (README section 4)
+code/business_entity_resolution/artefacts/
+code/business_entity_resolution/output/
+code/business_entity_resolution/logs/
 
-# Restored / rebuilt outputs (the committed copies are .gz)
-output/**/*.tsv
+# Uncompressed outputs (the committed copies in output/ are .gz)
+output/*.tsv
 *.zip
 
 # Model checkpoints / caches
@@ -20,7 +16,6 @@ output/**/*.tsv
 *.bin
 *.safetensors
 *.ckpt
-*.npy
 .cache/
 
 # Python

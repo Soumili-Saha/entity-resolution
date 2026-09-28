@@ -1,0 +1,20 @@
+# Environment used for the submitted results: AWS EC2 g5.2xlarge (NVIDIA A10G GPU), Amazon Linux 2023, Python 3.13;
+# pipeline-v2 notebooks on Google Colab (GPU and TPU runtimes).
+# torch for the instance (CUDA 12.4):  pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+pandas==3.0.2
+numpy==2.4.4
+scipy==1.17.1
+scikit-learn==1.8.0
+pyarrow==24.0.0
+PyYAML==6.0.3
+rapidfuzz==3.14.6
+Unidecode==1.4.0
+lightgbm==4.7.0
+torch==2.6.0
+transformers==5.6.0
+sentence-transformers==5.4.1
+# Qwen3-4B LoRA cross-encoder (src/qwen_ce/)
+peft==0.18.1
+# pipeline v2 (src/pipeline_v2/)
+sparse-dot-topn==1.2.0
+indic-transliteration==2.3.82

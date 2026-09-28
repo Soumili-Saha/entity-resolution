@@ -1,0 +1,9 @@
+{
+ "model": "Qwen/Qwen3-4B-Base (Apache-2.0, 4.02B) seq-cls + LoRA r=32",
+ "n_rows": 890838,
+ "auc": 0.9907080738244399,
+ "logloss": 0.11931179279258115,
+ "handoff_rows": 684947,
+ "handoff_auc": 0.9984375100906872,
+ "handoff_logloss": 0.04670649969277018
+}

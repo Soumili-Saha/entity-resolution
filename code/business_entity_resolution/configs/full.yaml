@@ -1,0 +1,50 @@
+# All tunable values live here: k values, thresholds, model names, seeds.
+seed: 42
+
+paths:
+  data_dir: dataset
+  artefacts_dir: artefacts
+  output_dir: output/full
+  model_dir: artefacts/model_full
+  logs_dir: logs
+
+validation:
+  n_folds: 5            # GroupKFold by S1 entity
+  holdout_frac: 0.2
+
+blocking:
+  tfidf_ngram_range: [3, 5]
+  tfidf_top_k: 30
+  embed_model: intfloat/multilingual-e5-small
+  embed_model_path: artefacts/embed_ft    # fine-tuned checkpoint dir overrides embed_model when set
+  embed_top_k: 20
+  token_top_k: 12
+  token_max_df: 3000         # tokens more frequent than this (per country pool) are ignored
+  max_candidates: 25         # cap per S1 after union, by best rank across passes (recall ~99.1%)
+
+train:
+  sample_s1: 3000000         # full: every training S1 (capped at the table size)
+  feature_chunk_s1: 100000
+
+cross_encoder:
+  model_name: xlm-roberta-base
+  max_length: 128
+  epochs: 2
+  batch_size: 32
+  lr: 2.0e-5
+
+lgbm:
+  num_leaves: 127
+  learning_rate: 0.1
+  n_estimators: 3000
+  early_stopping_rounds: 100
+  min_data_in_leaf: 50
+  feature_fraction: 0.8
+  bagging_fraction: 0.8
+
+decide:
+  tune_max_s1: 300000        # tune the decision grid on a 300k-S1 random subset
+  one_to_one: true
+  s2_s3_boost: 0.0
+  p_none_weight: 1.0
+  min_prob: 0.0

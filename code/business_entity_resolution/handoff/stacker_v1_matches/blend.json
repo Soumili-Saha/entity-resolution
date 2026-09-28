@@ -1,0 +1,17 @@
+{
+ "model": "stack_extra",
+ "extra": {
+  "ce_large": "handoff/xlmr_large_ce_v1",
+  "ce_full": "handoff/xlmr_large_ce_v2",
+  "qwen": "handoff/qwen3_4b_lora_ce"
+ },
+ "swap": "ce_large=handoff/xlmr_large_ce_v3_unseen",
+ "decision": {
+  "method": "expf",
+  "alpha": 1.5,
+  "one_to_one": true
+ },
+ "shift": "unseen:-1",
+ "pairs": "handoff/lgbm_ranker_v1/oof_train_full_part*.parquet",
+ "lgbm_test": "handoff/lgbm_ranker_v1/probs_model_full_part*.parquet"
+}
